@@ -1,6 +1,7 @@
 import "../src/styles/GlobalStyles.css"
 import { Header } from "./components/Header";
 import { IntroductionSection } from "./components/IntroductionSection";
+import { ProductsSection } from "./components/ProductsSection";
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Header/>
       <main>
         <IntroductionSection/>
+        <ProductsSection/>
       </main>
     </div>
   );

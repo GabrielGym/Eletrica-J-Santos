@@ -48,6 +48,7 @@ header {
         right: 46px;
         gap: 6px;
         max-width: 100px;
+        z-index: 1;
 
         >button {
             font-family: 'Inter', sans-serif;

@@ -1,3 +1,13 @@
+import lustreRustico from '../assets/Rectangle 30.png'
+import Lampada from '../assets/Rectangle 30 (1).png'
+import Extensao from      '../assets/Rectangle 30 (2).png'
+import KitDeFerramentas from '../assets/Rectangle 30 (3).png'
+import GarfosDeMesaInox from '../assets/Rectangle 30 (4).png'
+import Chuveiro from '../assets/Rectangle 30 (5).png'
+import Ventilador from '../assets/Rectangle 30 (6).png'
+import Tomada from '../assets/Rectangle 30 (7).png'
+
+
 export type TProducts = {
     id: number,
     name: string,
@@ -16,7 +26,7 @@ export const products: TProducts[] = [
         discountPrice: 33.33,
         installments: 3,
         category: "Lustres",
-        img: "../assets/Rectangle 30.png",
+        img: `${lustreRustico}`,
     },
     {
         id: 2,
@@ -25,7 +35,7 @@ export const products: TProducts[] = [
         discountPrice: 33.3,
         installments: 2,
         category: "Lâmpadas",
-        img: "../assets/Rectangle 30 (1).png",
+        img: `${Lampada}`,
     },
     {
         id: 3,
@@ -34,7 +44,7 @@ export const products: TProducts[] = [
         discountPrice: 32,
         installments: null,
         category: "Acessórios",
-        img: "../assets/Rectangle 30 (2).png",
+        img: `${Extensao}`,
     },
     {
         id: 4,
@@ -43,7 +53,7 @@ export const products: TProducts[] = [
         discountPrice: 20,
         installments: 2,
         category: "Ferramentas",
-        img: "../assets/Rectangle 30 (3).png",
+        img: `${KitDeFerramentas}`,
     },
     {
         id: 5,
@@ -52,7 +62,7 @@ export const products: TProducts[] = [
         discountPrice: 46.6,
         installments: null,
         category: "Utensílios domésticos",
-        img: "../assets/Rectangle 30 (4).png",
+        img: `${GarfosDeMesaInox}`,
     },
     {
         id: 6,
@@ -61,7 +71,7 @@ export const products: TProducts[] = [
         discountPrice: 16.6,
         installments: 4,
         category: "Acessórios",
-        img: "../assets/Rectangle 30 (5).png",
+        img: `${Chuveiro}`,
     },
     {
         id: 7,
@@ -70,7 +80,7 @@ export const products: TProducts[] = [
         discountPrice: 40,
         installments: null,
         category: "Utensílios domésticos",
-        img: "../assets/Rectangle 30 (6).png",
+        img: `${Ventilador}`,
     },
     {
         id: 8,
@@ -79,6 +89,6 @@ export const products: TProducts[] = [
         discountPrice: 50,
         installments: null,
         category: "Acessórios",
-        img: "../assets/Rectangle 30 (7).png",
+        img: `${Tomada}`,
     },
 ]
