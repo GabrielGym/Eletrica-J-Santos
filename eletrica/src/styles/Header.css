@@ -1,0 +1,122 @@
+header {
+    display: flex;
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    height: 50px;
+
+    .logo-header {
+        width: 40%;
+        margin: 10px 20px;
+
+        >h1 {
+            font-size: 0.6rem;
+            color: var(--color-azul-mais-escuro);
+            font-weight: 800;
+            max-width: 100px;
+
+            >span {
+                font-size: 1rem;
+            }
+        }
+    }
+
+    .open-infos-header-mobile {
+        width: 60%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        background-color: var(--color-gray-2);
+        border-radius: 32px 0px 0px 32px;
+
+        >button {
+            background-color: transparent;
+            border: none;
+            font-size: 1rem;
+            padding-right: 20px;
+        }
+    }
+
+    .infos-header-mobile {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 14px;
+        right: 46px;
+        gap: 6px;
+        max-width: 100px;
+
+        >button {
+            font-family: 'Inter', sans-serif;
+            border: none;
+            background-color: transparent;
+            font-size: 0.7rem;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        >button:hover{
+            border-bottom: 3px var(--color-gray-0) solid;
+        }
+
+        .button-contact{
+            border-radius: 8px;
+            border: none;
+            background-color: var(--color-azul-mais-escuro);
+            color: var(--color-gray-0);
+            padding: 8px 15px;
+        }
+    }
+
+    .infos-header {
+        display: none;
+
+        >button {
+            font-family: 'Inter', sans-serif;
+            border: none;
+            background-color: transparent;
+            font-size: 0.7rem;
+            font-weight: 600;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        >button:hover{
+            border-bottom: 3px var(--color-gray-0) solid;
+        }
+
+        .button-contact{
+            border-radius: 8px;
+            border: none;
+            background-color: var(--color-azul-mais-escuro);
+            color: var(--color-gray-0);
+            padding: 8px 15px;
+        }
+    }
+
+    @media (min-width: 500px) {
+        .open-infos-header-mobile {
+            display: none;
+        }
+        .infos-header-mobile {
+            display: none;
+        }
+
+        .infos-header{
+            display: flex;
+            min-width: 60%;
+            height: 100%;
+            flex-direction: row;
+            align-items: center;
+            background-color: var(--color-gray-2);
+            border-radius: 32px 0px 0px 32px;
+            padding: 0px 20px;
+            gap: 0px
+        }
+    }
+}
