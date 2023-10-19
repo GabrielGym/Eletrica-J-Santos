@@ -1,0 +1,41 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding-top: 50px;
+
+    >.conteiner-duvida {
+        display: flex;
+        max-width: 100%;
+        position: relative;
+
+        >img {
+            max-width: 100%;
+            min-height: 100px;
+        }
+
+        > .button-tira-duvida {
+            position: absolute;
+            z-index: 1;
+            top: 62%;
+            right: 21%;
+
+            background-color: var(--color-amarelo);
+            border: none;
+            padding: 10px 20px;
+            font-family: 0.8rem;
+            font-weight: 600;
+        }
+    }
+
+    >.redes-sociais {
+        max-width: 100%;
+        display: flex;
+
+        >img {
+            min-height: 100px;
+            max-width: 100%;
+        }
+    }
+}
