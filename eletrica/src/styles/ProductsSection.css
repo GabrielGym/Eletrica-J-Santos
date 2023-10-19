@@ -10,6 +10,8 @@ section {
         max-width: 100%;
         box-sizing: border-box;
         padding: 8% 20px 0px 20px;
+        position: inherit;
+        top: 20px;
 
         >img {
             max-width: 100%;
@@ -26,10 +28,7 @@ section {
         margin: 0 auto;
         max-width: 1200px;
         box-sizing: border-box;
-        position: absolute;
-        top: 84%;
-        left: 0;
-        right: 0;
+        z-index: 1;
 
         >.card-product {
             list-style: none;
@@ -61,6 +60,7 @@ section {
 
                 >.img-product {
                     max-width: 100%;
+
                 }
 
                 >span {

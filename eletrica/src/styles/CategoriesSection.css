@@ -1,0 +1,90 @@
+section {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding: 0;
+
+    > .conteiner-capa-de-fundo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        padding: 0px;
+
+        > img {
+            min-height: 100px;
+            max-width: 100%;
+        }
+
+        > h1 {
+            position: absolute;
+            z-index: 1;
+            top: 15%;
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: var(--color-gray-0);
+        }
+    }
+
+    > .conteiner-category {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+        align-items: center;
+        gap: 20px;
+        padding: 0px 30px;
+        box-sizing: border-box;
+
+        > .card-category {
+            max-width: 150px;
+            width: 100%;
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            box-sizing: border-box;
+            border-radius: 8px;
+            z-index: 1;
+            margin: 0 auto;
+
+            > .name-category {
+                text-align: center;
+                font-size: 0.8rem;
+                font-weight: 600;
+                color: var(--color-gray-2);
+                margin: 12px 0px;
+            }
+
+            > .conteiner-img-category {
+                max-width: 100%;
+                position: relative;
+                padding: 0;
+                > img {
+                    max-width: 100%;
+                }
+
+                > .img-category {
+                    margin: 0 auto;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 20px;
+                    max-width: 70%;
+                    max-height: 84%;
+
+                }
+            }
+        }        
+    }
+
+    @media (min-width: 700px) {
+        > .conteiner-capa-de-fundo {
+            > h1 {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
