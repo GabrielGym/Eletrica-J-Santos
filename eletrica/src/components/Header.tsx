@@ -1,6 +1,7 @@
 import { useState } from "react";
 import "../styles/Header.css"
 import { AiOutlineMenuUnfold } from 'react-icons/ai';
+import chevron from '../assets/chevron-down.png'
 
 export const Header = () => {
    const [buttonMenu, setButtonMenu] = useState(false)
@@ -19,7 +20,7 @@ export const Header = () => {
             
             {buttonMenu ? <div className="infos-header-mobile">
                 <button className="button-home">Home</button>
-                <button className="button-categoy">Categorias <img src="../assets/chevron-down.png" alt="Options categories"/></button>
+                <button className="button-categoy">Categorias <img src={chevron} alt="Options categories"/></button>
                 <button className="button-about">Sobre</button>
                 <button className="button-location">Localização</button>
                 <button className="button-contact">Contato</button>
@@ -27,7 +28,7 @@ export const Header = () => {
 
            <div className="infos-header">
                 <button className="button-home">Home</button>
-                <button className="button-categoy">Categorias <img src="../assets/chevron-down.png" alt="Options categories"/></button>
+                <button className="button-categoy">Categorias <img src={chevron} alt="Options categories"/></button>
                 <button className="button-about">Sobre</button>
                 <button className="button-location">Localização</button>
                 <button className="button-contact">Contato</button>

@@ -1,0 +1,127 @@
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+
+    >h1 {
+        z-index: 1;
+        color: var(--color-gray-0);
+        font-size: 1rem;
+        font-weight: 600;
+        max-width: 140px;
+        margin: 28px 20px;
+    }
+
+    >h3 {
+        z-index: 1;
+        color: var(--color-gray-0);
+        margin: 0px 20px;
+        font-size: 0.4rem;
+        max-width: 44%;
+        font-weight: 300;
+    }
+
+    >button {
+        font-family: 'Inter', sans-serif;
+        border: none;
+        background-color: transparent;
+        display: flex;
+        align-items: center;
+        color: var(--color-gray-0);
+        margin: 0px 14px;
+        z-index: 1;
+
+        >h3 {
+            margin: 4px 2px;
+            font-size: 0.4rem;
+            max-width: 136px;
+            font-weight: 300;
+        }
+
+        >img {
+            max-width: 10%;
+        }
+    }
+
+    >.view-products {
+        margin: 10px 20px;
+        background-color: var(--color-amarelo);
+        padding: 6px 9px;
+        font-size: 0.6rem;
+        font-weight: 600;
+        color: var(--color-azul-mais-escuro);
+    }
+
+    >.button-about {
+        margin: 0px 20px;
+        padding: 6px 9px;
+        font-size: 0.6rem;
+        font-weight: 600;
+        border: 1px var(--color-gray-0) solid;
+    }
+
+    >.img-introduction {
+        min-height: 200px;
+        max-width: 100%;
+        position: absolute;
+        top: 0;
+        z-index: 0;
+    }
+
+    @media (min-width: 600px) {
+        >h1 {
+            z-index: 1;
+            color: var(--color-gray-0);
+            font-size: 1.8rem;
+            font-weight: 600;
+            max-width: 240px;
+        }
+
+        >h3 {
+            font-size: 0.8rem;
+        }
+
+        >button {
+            >h3 {
+                font-size: 0.8rem;
+            }
+        }
+
+        >.view-products {
+            padding: 6px 12px;
+            font-size: 0.7rem;
+        }
+
+        >.button-about {
+            padding: 6px 12px;
+            font-size: 0.7rem;
+        }
+    }
+
+    @media (min-width: 1000px) {
+        >h1 {
+            margin: 62px 122px;
+        }
+
+        >h3 {
+            margin: 0px 122px;
+        }
+
+        >.view-products {
+            font-size: 1rem;
+            padding: 10px 30px;
+            margin: 15px 122px;
+        }
+
+        >.button-about {
+            padding: 10px 30px;
+            font-size: 1rem;
+            margin: 7px 122px;
+        }
+
+        >button {
+            margin: 20px 122px;
+        }
+    }
+}
