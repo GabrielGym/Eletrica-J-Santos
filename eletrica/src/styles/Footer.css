@@ -15,17 +15,17 @@ footer {
             min-height: 100px;
         }
 
-        > .button-tira-duvida {
+        >.button-tira-duvida {
             position: absolute;
             z-index: 1;
             top: 62%;
-            right: 21%;
+            left: 48%;
 
             background-color: var(--color-amarelo);
             border: none;
-            padding: 10px 20px;
-            font-family: 0.8rem;
-            font-weight: 600;
+            padding: 8px 4px;
+            font-size: 0.6rem;
+            font-weight: 700;
         }
     }
 
@@ -36,6 +36,16 @@ footer {
         >img {
             min-height: 100px;
             max-width: 100%;
+        }
+    }
+
+    @media (min-width: 620px) {
+        >.conteiner-duvida {
+            >.button-tira-duvida {
+                padding: 10px 16px;
+                font-size: 0.8rem;
+                font-weight: 600;
+            }
         }
     }
 }

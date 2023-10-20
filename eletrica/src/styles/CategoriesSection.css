@@ -13,14 +13,14 @@ section {
         padding: 0px;
 
         > img {
-            min-height: 100px;
+            min-height: 120px;
             max-width: 100%;
         }
 
         > h1 {
             position: absolute;
             z-index: 1;
-            top: 15%;
+            top: 55%;
             font-size: 0.8rem;
             font-weight: 600;
             color: var(--color-gray-0);

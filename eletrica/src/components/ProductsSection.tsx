@@ -4,7 +4,7 @@ import border from '../assets/border.png'
 import '../styles/ProductsSection.css'
 
 export const ProductsSection = () => (
-    <section>
+    <section id="scrollTargetProducts">
         <div>
             <img src={capaDeFundo} alt="capa de fundo" />
         </div>

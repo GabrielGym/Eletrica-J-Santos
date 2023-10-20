@@ -3,7 +3,7 @@ import capaDeFundo from "../assets/Group 65.png"
 import '../styles/AboutSection.css'
 
 export const AboutSection = () => (
-    <section>
+    <section id="scrollTargetLocation">
         <h1 className="title-about">SUA MELHOR OPÇÃO</h1>
         <div className="conteiner-about">
             <img src={capaDeFundo} alt="Parte da Frente da nossa loja" />

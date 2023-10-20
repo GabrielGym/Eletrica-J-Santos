@@ -62,7 +62,7 @@ section {
     }
 
     >.img-introduction {
-        min-height: 200px;
+        min-height: 286px;
         max-width: 100%;
         position: absolute;
         top: 0;
@@ -71,37 +71,43 @@ section {
 
     @media (min-width: 600px) {
         >h1 {
+            margin: 4% 10% 0% 10%;
             z-index: 1;
             color: var(--color-gray-0);
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             font-weight: 600;
             max-width: 240px;
         }
 
         >h3 {
-            font-size: 0.8rem;
+            font-size: 0.6rem;
+            margin: 0px 10%;
         }
 
         >button {
+            margin: 0px 10%;
             >h3 {
-                font-size: 0.8rem;
+                font-size: 0.6rem;
+                
             }
         }
 
         >.view-products {
             padding: 6px 12px;
             font-size: 0.7rem;
+            margin: 0px 10%;
         }
 
         >.button-about {
             padding: 6px 12px;
             font-size: 0.7rem;
+            margin: 0px 10%;
         }
     }
 
     @media (min-width: 1000px) {
         >h1 {
-            margin: 62px 122px;
+            margin: 62px 122px 20px 122px;
         }
 
         >h3 {

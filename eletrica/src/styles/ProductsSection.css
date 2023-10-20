@@ -5,16 +5,18 @@ section {
     box-sizing: border-box;
     position: relative;
 
+
     >div {
         display: flex;
         max-width: 100%;
         box-sizing: border-box;
-        padding: 8% 20px 0px 20px;
-        position: inherit;
-        top: 20px;
+        padding: 0px 20px;
+        position: relative;
 
         >img {
             max-width: 100%;
+            position: inherit;
+            top: 40px;
         }
     }
 
@@ -123,7 +125,11 @@ section {
 
     @media (min-width: 500px) {
         >div {
-            padding: 12% 40px 0px 40px;
+            padding: 0px 40px;
+
+            > img {
+                top: 60px;
+            }
         }
 
         >ul {
@@ -135,9 +141,23 @@ section {
         }
     }
 
+    @media (min-width: 700px) {
+        >div {
+            padding: 30px 40px;
+
+            > img {
+                top: 60px;
+            }
+        }
+    }
+
     @media (min-width: 800px) {
         >div {
-            padding: 18% 60px 0px 60px;
+            padding: 12% 60px;
+
+            > img {
+                top: 60px;
+            }
         }
 
         >ul {

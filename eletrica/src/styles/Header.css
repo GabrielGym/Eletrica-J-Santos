@@ -6,6 +6,7 @@ header {
     position: relative;
     height: 50px;
 
+
     .logo-header {
         width: 40%;
         margin: 10px 20px;
@@ -62,11 +63,11 @@ header {
             align-items: center;
         }
 
-        >button:hover{
+        >button:hover {
             border-bottom: 3px var(--color-gray-0) solid;
         }
 
-        .button-contact{
+        .button-contact {
             border-radius: 8px;
             border: none;
             background-color: var(--color-azul-mais-escuro);
@@ -89,34 +90,93 @@ header {
             align-items: center;
         }
 
-        >button:hover{
+        >button:hover {
             border-bottom: 3px var(--color-gray-0) solid;
         }
 
-        .button-contact{
+        .button-contact {
             border-radius: 8px;
             border: none;
             background-color: var(--color-azul-mais-escuro);
             color: var(--color-gray-0);
             padding: 8px 15px;
         }
-        .button-categoy{
+
+        .button-categoy {
             display: flex;
             flex-direction: row;
         }
     }
 
-   
+    >.conteiner-options-category {
+        position: absolute;
+        right: 13%;
+        top: 50px;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        max-width: 160px;
+        background-color: var(--color-gray-0);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.8);
+        gap: 10px;
+
+        >.options-category {
+            display: flex;
+            box-sizing: border-box;
+            gap: 5px;
+            align-items: center;
+            justify-content: flex-start;
+            width: 100%;
+            max-width: 100%;
+
+            >.conteiner-img-category {
+                max-width: 100%;
+                position: relative;
+                display: flex;
+
+                >.fundo-da-img-category {
+                    max-width: 50px;
+                    max-height: 50px;
+                }
+
+                >.img-category {
+                    max-width: 30px;
+                    max-height: 30px;
+                    position: absolute;
+                    z-index: 1;
+                    margin: 0 auto;
+                    left: 0;
+                    right: 0;
+                    top: 12px;
+                }
+            }
+
+            > .name-category {
+                color: var(--color-azul-mais-escuro);
+                font-weight: 600;
+                font-size: 0.6rem;
+            }
+        }
+    }
+
+
 
     @media (min-width: 500px) {
         .open-infos-header-mobile {
             display: none;
         }
+
         .infos-header-mobile {
             display: none;
         }
 
-        .infos-header{
+        .infos-header {
             display: flex;
             min-width: 60%;
             height: 100%;
@@ -127,6 +187,9 @@ header {
             border-radius: 32px 0px 0px 32px;
             padding: 0px 20px;
             gap: 0px
+        }
+        .conteiner-options-category {
+            right: 36%;
         }
     }
 }
